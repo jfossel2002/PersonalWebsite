@@ -21,9 +21,9 @@ function getLineHeight() {
     console.log(rs.getPropertyValue('--line_height') )  
   }
 
-  function setLineHeight(height) {
+  function setLineHeight(height, height_name) {
     var r = document.querySelector(':root');
-    r.style.setProperty('--line_height', height + "px");
+    r.style.setProperty(height_name, height + "px");
   }
 
   function getPosition(name){
@@ -35,7 +35,9 @@ function getLineHeight() {
 
   function adjustHeights(){
     getLineHeight();
-    setLineHeight(getPosition("icon_2")[0]-getPosition("icon_1")[1]); //Sets the height of line between two icons by taking the difference between both positions
+    setLineHeight(getPosition("icon_2")[0]-getPosition("icon_1")[1], '--line_height'); //Sets the height of line between two icons by taking the difference between both positions
+    setLineHeight(getPosition("icon_3")[0]-getPosition("icon_2")[1], '--line_height_2'); //Sets the height of line between two icons by taking the difference between both positions
+
     getLineHeight();
   }
 

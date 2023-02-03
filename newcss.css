@@ -2,6 +2,7 @@
 
 :root{
   --line_height: 200px;
+  --line_height_2: 200px;
 }
 body {
   padding: 0;
@@ -207,8 +208,19 @@ nav ul li top_button{
   .div6 { grid-area: 7 / 3 / 8 / 6; } 
 
   .div7 { grid-area: 8 / 1 / 9 / 2; } 
-  .div8 { grid-area: 8 / 2 / 9 / 3; } 
+  .div8 { grid-area: 8 / 2 / 9 / 3; } /*ACE Intern*/
   .div9 { grid-area: 8 / 3 / 9 / 6; } 
+
+  .div10 { grid-area: 9 / 1 / 10 / 2; } 
+  .div11 { grid-area: 9 / 2 / 10 / 3; } /*ACE GA*/
+  .div12 { grid-area: 9 / 3 / 10 / 6; } 
+
+  .div13 { grid-area: 10 / 1 / 11 / 5; } /*Education*/
+
+  .div14 { grid-area: 11 / 1 / 12 / 2; } 
+  .div15 { grid-area: 11 / 2 / 12 / 3; } /*Highschool*/
+  .div16 { grid-area: 11 / 3 / 12 / 6; } 
+
 
 
   .IconLineStart span.fa-stack::after {
@@ -220,12 +232,26 @@ nav ul li top_button{
     width: 1px;
     display: inline-block;
     z-index: 1;
+    top: 100%;
   }
   .IconLineStart span.fa-stack::before {
     bottom: 100%;
   }
-  .IconLineStart span.fa-stack::after {
+
+  .IconLineStart2 span.fa-stack::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    height: var(--line_height_2);
+    width: 1px;
+    display: inline-block;
+    z-index: 1;
     top: 100%;
   }
+  .IconLineStart2 span.fa-stack::before {
+    bottom: 100%;
+  }
+
 
 
