@@ -34,11 +34,11 @@ function getLineHeight() {
   }
 
   function adjustHeights(){
-    getLineHeight();
     setLineHeight(getPosition("icon_2")[0]-getPosition("icon_1")[1], '--line_height'); //Sets the height of line between two icons by taking the difference between both positions
     setLineHeight(getPosition("icon_3")[0]-getPosition("icon_2")[1], '--line_height_2'); //Sets the height of line between two icons by taking the difference between both positions
+    setLineHeight(getPosition("icon_5")[0]-getPosition("icon_4")[1], '--line_height_3'); //Sets the height of line between two icons by taking the difference between both positions
+    setLineHeight(getPosition("icon_6")[0]-getPosition("icon_5")[1], '--line_height_4'); //Sets the height of line between two icons by taking the difference between both positions
 
-    getLineHeight();
   }
 
     var globalResizeTimer = null;

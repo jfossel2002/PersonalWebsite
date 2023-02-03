@@ -3,6 +3,8 @@
 :root{
   --line_height: 200px;
   --line_height_2: 200px;
+  --line_height_3: 200px;
+  --line_height_4: 200px;
 }
 body {
   padding: 0;
@@ -159,6 +161,7 @@ nav ul li top_button{
 }
 
 
+
 }
 
 
@@ -179,7 +182,7 @@ nav ul li top_button{
   float: left;
   width: 50%;
   background: #000000;
-  padding-left: 50px;
+  padding-left: 100px;
   padding-bottom: 50px;
   
 }
@@ -205,21 +208,37 @@ nav ul li top_button{
 
   .div4 { grid-area: 7 / 1 / 8 / 2; } /*SSA*/
   .div5 { grid-area: 7 / 2 / 8 / 3; } /*FA Icons*/
-  .div6 { grid-area: 7 / 3 / 8 / 6; } 
+  .div6 { grid-area: 7 / 3 / 8 / 6; 
+    padding-right: 100px;
+} 
 
   .div7 { grid-area: 8 / 1 / 9 / 2; } 
   .div8 { grid-area: 8 / 2 / 9 / 3; } /*ACE Intern*/
-  .div9 { grid-area: 8 / 3 / 9 / 6; } 
+  .div9 { grid-area: 8 / 3 / 9 / 6; 
+    padding-right: 100px;} 
 
   .div10 { grid-area: 9 / 1 / 10 / 2; } 
   .div11 { grid-area: 9 / 2 / 10 / 3; } /*ACE GA*/
-  .div12 { grid-area: 9 / 3 / 10 / 6; } 
+  .div12 { grid-area: 9 / 3 / 10 / 6; 
+    padding-right: 100px;} 
 
   .div13 { grid-area: 10 / 1 / 11 / 5; } /*Education*/
 
   .div14 { grid-area: 11 / 1 / 12 / 2; } 
   .div15 { grid-area: 11 / 2 / 12 / 3; } /*Highschool*/
-  .div16 { grid-area: 11 / 3 / 12 / 6; } 
+  .div16 { grid-area: 11 / 3 / 12 / 6; 
+    padding-right: 100px;} 
+
+
+  .div17 { grid-area: 12 / 1 / 13 / 2; } 
+  .div18 { grid-area: 12 / 2 / 13 / 3; } /*Syracuse*/
+  .div19 { grid-area: 12 / 3 / 13 / 6; 
+    padding-right: 100px;} 
+
+  .div20 { grid-area: 13 / 1 / 14 / 2; } 
+  .div21 { grid-area: 13 / 2 / 14 / 3; } /*College*/
+  .div22 { grid-area: 13 / 3 / 14 / 6; 
+    padding-right: 100px;} 
 
 
 
@@ -250,6 +269,36 @@ nav ul li top_button{
     top: 100%;
   }
   .IconLineStart2 span.fa-stack::before {
+    bottom: 100%;
+  }
+
+  .IconLineStart3 span.fa-stack::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    height: var(--line_height_3);
+    width: 1px;
+    display: inline-block;
+    z-index: 1;
+    top: 100%;
+  }
+  .IconLineStart3 span.fa-stack::before {
+    bottom: 100%;
+  }
+
+  .IconLineStart4 span.fa-stack::after {
+    content: '';
+    background: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 50%;
+    height: var(--line_height_4);
+    width: 1px;
+    display: inline-block;
+    z-index: 1;
+    top: 100%;
+  }
+  .IconLineStart4 span.fa-stack::before {
     bottom: 100%;
   }
 
